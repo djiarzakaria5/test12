@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GlobelReach - Marketing Agency</title>
+    <style>
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background-color: #f8f9fa;
+        }
+        header {
+            background: #0056b3;
+            color: #fff;
+            padding: 1.5rem 0;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2rem;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background: #004494;
+        }
+        nav a {
+            color: #fff;
+            padding: 1rem 2rem;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background 0.3s ease;
+        }
+        nav a:hover {
+            background: #003372;
+        }
+        .container {
+            padding: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .section {
+            margin-bottom: 3rem;
+        }
+        .section h2 {
+            color: #0056b3;
+            font-size: 1.8rem;
+            border-bottom: 2px solid #0056b3;
+            padding-bottom: 0.5rem;
+            margin-bottom: 1rem;
+        }
+        .services, .portfolio, .testimonials {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+        }
+        .service, .portfolio-item, .testimonial {
+            background: #fff;
+            padding: 1.5rem;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            flex: 1 1 calc(33% - 3rem);
+            box-sizing: border-box;
+            transition: transform 0.3s ease;
+        }
+        .service:hover, .portfolio-item:hover, .testimonial:hover {
+            transform: translateY(-5px);
+        }
+        .service h3, .portfolio-item h3, .testimonial p {
+            margin: 0 0 0.5rem 0;
+        }
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .contact-form input, .contact-form textarea {
+            padding: 0.75rem;
+            margin-bottom: 1rem;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        .contact-form button {
+            padding: 0.75rem;
+            background: #0056b3;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+        .contact-form button:hover {
+            background: #004494;
+        }
+        .footer {
+            background: #0056b3;
+            color: #fff;
+            text-align: center;
+            padding: 1rem 0;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>GlobelReach</h1>
+    <p>Leading Marketing Agency in Algeria</p>
+</header>
+
+<nav>
+    <a href="#services">Services</a>
+    <a href="#portfolio">Portfolio</a>
+    <a href="#testimonials">Testimonials</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<div class="container">
+    <section id="services" class="section services">
+        <h2>Our Services</h2>
+        <div class="service">
+            <h3>Search Engine Marketing (SEM)</h3>
+            <p>Boost your online presence with targeted paid advertising that drives traffic and increases conversions.</p>
+        </div>
+        <div class="service">
+            <h3>Search Engine Optimization (SEO)</h3>
+            <p>Improve your website's visibility on search engines organically to attract more visitors and grow your business.</p>
+        </div>
+        <div class="service">
+            <h3>Content Creation</h3>
+            <p>Create engaging and high-quality content that resonates with your audience and strengthens your brand.</p>
+        </div>
+        <div class="service">
+            <h3>Data Analysis</h3>
+            <p>Analyze and interpret data to make informed decisions and optimize your marketing strategies for better results.</p>
+        </div>
+    </section>
+
+    <section id="portfolio" class="section portfolio">
+        <h2>Our Portfolio</h2>
+        <div class="portfolio-item">
+            <h3>Project 1</h3>
+            <p>A successful SEM campaign that increased client sales by 50%.</p>
+        </div>
+        <div class="portfolio-item">
+            <h3>Project 2</h3>
+            <p>SEO optimization that resulted in a 200% increase in organic traffic.</p>
+        </div>
+        <div class="portfolio-item">
+            <h3>Project 3</h3>
+            <p>Content strategy that boosted engagement on social media by 75%.</p>
+        </div>
+    </section>
+
+    <section id="testimonials" class="section testimonials">
+        <h2>Testimonials</h2>
+        <div class="testimonial">
+            <p>"The team at GlobelReach is phenomenal. Our SEM campaign delivered amazing results!"</p>
+            <p>- Client 1</p>
+        </div>
+        <div class="testimonial">
+            <p>"Thanks to their SEO expertise, our website traffic has never been higher."</p>
+            <p>- Client 2</p>
+        </div>
+        <div class="testimonial">
+            <p>"Their content creation services are top-notch. Our audience loves the new content!"</p>
+            <p>- Client 3</p>
+        </div>
+    </section>
+
+    <section id="contact" class="section contact">
+        <h2>Contact Us</h2>
+        <p>Location: Algeria</p>
+        <p>CEO: Zakaria</p>
+        <form class="contact-form">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" rows="5" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+</div>
+
+<footer class="footer">
+    <p>&copy; 2024 GlobelReach. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
